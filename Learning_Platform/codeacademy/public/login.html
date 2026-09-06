@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log In — CodeAcademy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="nav__logo" href="index.html">Code<span>Academy</span></a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
+      <li><a href="courses.html">Courses</a></li>
+    </ul>
+    <div class="nav__actions" data-nav-actions>
+      <a class="btn btn--ghost" href="login.html">Log in</a>
+      <a class="btn btn--primary btn--sm" href="signup.html">Sign up</a>
+    </div>
+  </nav>
+</header>
+
+<main class="auth-wrap">
+  <div class="auth-card">
+    <div class="auth-card__head">
+      <h1>CodeAcademy</h1>
+      <p>Welcome back! Log in to continue learning.</p>
+    </div>
+
+    <div class="form-message" data-form-message></div>
+
+    <form data-login-form novalidate>
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="btn btn--primary btn--block" type="submit">Log In</button>
+    </form>
+
+    <div class="auth-card__footer">
+      Don't have an account? <a href="signup.html" style="color:var(--ink);font-weight:600;">Sign up</a>
+    </div>
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
